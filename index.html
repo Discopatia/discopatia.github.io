@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discopatía | Link in Bio</title>
+    
+    <!-- Fuentes oficiales del manual (Aabak y Kepler) vía Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/eve7xzc.css">
+    
+    <style>
+        :root {
+            --bg-color: #f4efe6;          /* Beige pergamino / fondo claro */
+            --crema-marca: #c6a985;       /* Crema oficial del manual[cite: 27] */
+            --text-color: #1d1d1b;        /* Negro oficial[cite: 27] */
+            --accent-color: #db084a;      /* Rojo oficial[cite: 27] */
+            --card-bg: #ffffff;           /* Blanco oficial[cite: 27] */
+            --border-color: #d6cebf;      /* Borde sutil */
+            
+            /* Familias cargadas desde Typekit */
+            --font-display: 'aabak', serif;
+            --font-editorial: 'kepler-std', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-editorial);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 24px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+        }
+
+        /* Contenedor del Isotipo / Avatar */
+        .consultorio {
+            margin-bottom: 16px;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-color);
+            background-color: var(--card-bg);
+            display: inline-block;
+        }
+
+        /* Logotipo principal en el encabezado */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        h1 img {
+            max-width: 260px;
+            width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Subtítulo / Biografía corta con Kepler */
+        .bio {
+            font-family: var(--font-editorial);
+            font-size: 1.08rem;
+            line-height: 1.5;
+            margin-bottom: 32px;
+            color: #3a3a37;
+            padding: 0 12px;
+        }
+
+        /* Lista de enlaces */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            padding: 16px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: var(--font-editorial);
+            font-weight: 600;
+            font-size: 1.02rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .link-button:hover {
+            border-color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Botón principal con Aabak para mayor impacto visual */
+        .link-button.destacado {
+            background-color: var(--accent-color);
+            color: #ffffff;
+            border-color: var(--accent-color);
+            font-family: var(--font-display);
+            font-weight: 700;
+            letter-spacing: 0.4px;
+        }
+
+        .link-button.destacado:hover {
+            background-color: #b8063d;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 40px;
+            font-family: var(--font-editorial);
+            font-size: 0.85rem;
+            color: #6e6e69;
+            letter-spacing: 0.4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sello circular -->
+        <div class="consultorio">
+            <img src="Perfiles-Redes-04.jpg" alt="Sello de Discopatía" class="avatar">
+        </div>
+
+        <!-- Logotipo oficial en lugar de texto plano -->
+        <h1>
+            <img src="logotipo.png" alt="Discopatía">
+        </h1>
+
+        <!-- Biografía / Manifiesto seco -->
+        <p class="bio">
+            Terapia grupal en vivo y rock para pacientes crónicos. La cura oficial para los treinta y pico.
+        </p>
+
+        <!-- Botones de Enlace -->
+        <div class="links-list">
+            <a href="https://wa.me/573007507250" class="link-button destacado" target="_blank" rel="noopener">
+                🎟️ Reservar entradas (27 de Nov · Bar & Gourmet 1)
+            </a>
+            <a href="https://www.youtube.com/@Discopatia" class="link-button" target="_blank" rel="noopener">
+                📺 Ver nuestros Shorts y Ensayos en YouTube
+            </a>
+            <a href="https://instagram.com/discopatia" class="link-button" target="_blank" rel="noopener">
+                📸 Seguirnos en Instagram
+            </a>
+        </div>
+
+        <!-- Créditos del sistema -->
+        <footer>
+            DISCOPATÍA © 2026 · Soberanía digital sin algoritmos centrales
+        </footer>
+    </div>
+
+</body>
+</html>
